@@ -55,34 +55,44 @@ then
   mkdir m4
 fi
 
-if [ -e /usr/bin/make ]
+if [ -e /usr/bin/make ];
 then
   mkdir make
 fi
 
-if [ -e /usr/bin/perl ]
+if [ -e /usr/bin/perl ];
 then
   mkdir perl
 fi
 
-if [ -e /usr/bin/python3 ]
+if [ -e /usr/bin/python3 ];
 then
   mkdir python
 fi
 
 # Next, we get whatever is left over. Some distributions come with TCL, via tclsh, or Lua or even Ruby
 
-if [ -e /usr/bin/lua ]
+if [ -e /usr/bin/lua ];
 then
   mkdir lua
 fi
 
-if [ -e /usr/bin/ruby ]
+if [ -e /usr/bin/ruby ];
 then
   mkdir ruby
 fi
 
-if [ -e /usr/bin/tclsh ]
+if [ -e /usr/bin/sqlite3 ];
+then
+  mkdir sql
+fi
+
+if [ -e /usr/bin/tclsh ];
 then
   mkdir tcl
+fi
+
+if [ -e /usr/bin/xmllint ];
+then
+  mkdir xml
 fi
