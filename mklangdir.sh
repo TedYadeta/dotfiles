@@ -10,14 +10,20 @@ cd lang
 
 # Second, make two directories for Emacs and Vim (elisp & vimscript), and them symlink later
 
-if [ -e /usr/bin/emacs ]
+if [ -e /usr/bin/emacs ];
 then
   mkdir elisp
+  echo "Emacs Lisp (elisp) folder created!"
+else
+  echo "GNU Emacs is not installed."
 fi
 
-if [ -e /usr/bin/vim ]
+if [ -e /usr/bin/vim ];
 then
   mkdir vimscript
+  echo "Vimscript folder created!"
+else
+  echo "Vim is not installed."
 fi
 
 # Next, as this is running on Unix/Linux systems, we need to check if certain languages are already installed.
@@ -28,71 +34,146 @@ fi
 if [ -e /usr/bin/as ];
 then
   mkdir assembly
+  echo "Assembly folder created!"
+else
+  echo "GNU AS is not installed."
 fi
+
+if [ -e /usr/bin/awk ];
+then
+  mkdir awk
+  echo "AWK folder created!"
+else
+  echo "AWK is not installed."
 
 if [ -e /usr/bin/bash ];
 then
   mkdir bash
+  echo "Bash folder created!"
+else
+  echo "GNU Bash is not installed."
 fi
 
 if [ -e /usr/bin/gcc ];
 then
   mkdir c
+  echo "C folder created!"
+else
+  echo "gcc is not installed."
 fi
 
 if [ -e /usr/bin/g++ ];
 then
   mkdir cpp
+  echo "C Plus Plus (cpp) folder created!"
+else
+  echo "g++ is not installed"
 fi
 
 if [ -e /usr/bin/git ];
 then
   mkdir git
+  echo "Git folder created!"
+else
+  echo "Git is not installed."
 fi
 
 if [ -e /usr/bin/m4 ];
 then
   mkdir m4
+  echo "m4 folder created!"
+else
+  echo "GNU m4 is not installed."
 fi
 
 if [ -e /usr/bin/make ];
 then
   mkdir make
+  echo "Make folder created!"
+else
+  echo "GNU Make is not installed"
 fi
 
 if [ -e /usr/bin/perl ];
 then
   mkdir perl
+  echo "Perl folder created!"
+else
+  echo "Perl is not installed."
 fi
 
 if [ -e /usr/bin/python3 ];
 then
   mkdir python
+  echo "Python (python3) folder created!"
+else
+  echo "Python3 is not installed."
 fi
 
 # Next, we get whatever is left over. Some distributions come with TCL, via tclsh, or Lua or even Ruby
 
+if [ -e /usr/bin/ghostscript ]
+then
+  mkdir ghostscript
+  echo "PostScript folder created!"
+else
+  echo "Ghostscript is not installed."
+
+if [ -e /usr/bin/jq ]
+then
+  mkdir json
+  echo "JSON folder created!"
+else
+  echo "jq is not installed."
+fi
+
 if [ -e /usr/bin/lua ];
 then
   mkdir lua
+  echo "Lua folder created!"
+else
+  echo "Lua is not installed."
 fi
+
+if [ -e /usr/bin/octave ]
+then
+  mkdir octave
+  echo "Octave folder created!"
+else
+  echo "GNU Octave is not installed."
 
 if [ -e /usr/bin/ruby ];
 then
   mkdir ruby
+  echo "Ruby folder created!"
+else
+  echo "Ruby is not installed."
 fi
 
 if [ -e /usr/bin/sqlite3 ];
 then
   mkdir sql
+  echo "SQL folder created!"
+else
+  echo "sqlite3 is not installed."
 fi
 
 if [ -e /usr/bin/tclsh ];
 then
   mkdir tcl
+  echo "TCL folder created!"
+else
+  echo "tclsh is not installed."
 fi
 
 if [ -e /usr/bin/xmllint ];
 then
   mkdir xml
+  echo "XML folder created!"
+else
+  echo "xmllint is not installed."
 fi
+
+# Notes on what I've found on testing different distros:
+# Fedora 39 - Comes with Assembly, AWK, Bash, GhostScript, Git, jq, lua, perl, python, sql, tcl and xml by default
+# 
