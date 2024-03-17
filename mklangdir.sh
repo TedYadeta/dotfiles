@@ -176,4 +176,4 @@ fi
 
 # Notes on what I've found on testing different distros:
 # Fedora 39 - Comes with Assembly, AWK, Bash, GhostScript, Git, jq, lua, perl, python, sql, tcl and xml by default
-# 
+# Debian 12 - Comes with Assembly, AWK, Bash, gcc, ghostscript, g++, jq, make, perl, python
