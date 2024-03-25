@@ -45,6 +45,7 @@ then
   echo "AWK folder created!"
 else
   echo "AWK is not installed."
+fi
 
 if [ -e /usr/bin/bash ];
 then
@@ -118,6 +119,7 @@ then
   echo "PostScript folder created!"
 else
   echo "Ghostscript is not installed."
+fi
 
 if [ -e /usr/bin/jq ]
 then
@@ -141,6 +143,7 @@ then
   echo "Octave folder created!"
 else
   echo "GNU Octave is not installed."
+fi
 
 if [ -e /usr/bin/ruby ];
 then
