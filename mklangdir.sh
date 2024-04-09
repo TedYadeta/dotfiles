@@ -12,8 +12,11 @@ cd lang
 
 if [ -e /usr/bin/emacs ];
 then
+  echo "GNU Emacs found!"
+  emacs --version | head -n 1
   mkdir elisp
   echo "Emacs Lisp (elisp) folder created!"
+  sleep 5;
 else
   echo "GNU Emacs is not installed."
 fi
