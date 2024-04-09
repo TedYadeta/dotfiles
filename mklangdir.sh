@@ -23,8 +23,11 @@ fi
 
 if [ -e /usr/bin/vim ];
 then
+  echo "Vim found!"
+  vim --version | head -n 1
   mkdir vimscript
   echo "Vimscript folder created!"
+  sleep 5;
 else
   echo "Vim is not installed."
 fi
@@ -36,6 +39,8 @@ fi
 
 if [ -e /usr/bin/as ];
 then
+  echo "GNU Assembler found!"
+  as --version | head -n 1
   mkdir assembly
   echo "Assembly folder created!"
 else
