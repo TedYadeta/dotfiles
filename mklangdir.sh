@@ -49,6 +49,8 @@ fi
 
 if [ -e /usr/bin/awk ];
 then
+  echo "AWK found!"
+  awk --version | head -n 1
   mkdir awk
   echo "AWK folder created!"
 else
@@ -57,6 +59,8 @@ fi
 
 if [ -e /usr/bin/bash ];
 then
+  echo "GNU Bash found!"
+  bash --version | head -n 1
   mkdir bash
   echo "Bash folder created!"
 else
@@ -65,6 +69,8 @@ fi
 
 if [ -e /usr/bin/gcc ];
 then
+  echo "GCC found!"
+  gcc --version | head -n 1
   mkdir c
   echo "C folder created!"
 else
@@ -73,6 +79,8 @@ fi
 
 if [ -e /usr/bin/g++ ];
 then
+  echo "g++ Found!"
+  g++ --version | head -n 1
   mkdir cpp
   echo "C Plus Plus (cpp) folder created!"
 else
@@ -89,6 +97,8 @@ fi
 
 if [ -e /usr/bin/m4 ];
 then
+  echo "GNU M4 Found!"
+  m4 --version | head -n 1
   mkdir m4
   echo "m4 folder created!"
 else
@@ -97,6 +107,8 @@ fi
 
 if [ -e /usr/bin/make ];
 then
+  echo "GNU Make found!"
+  make --version | head -n 1
   mkdir make
   echo "Make folder created!"
 else
@@ -113,6 +125,8 @@ fi
 
 if [ -e /usr/bin/python3 ];
 then
+  echo "Python3 found!"
+  python3 --version | head -n 1
   mkdir python
   echo "Python (python3) folder created!"
 else
