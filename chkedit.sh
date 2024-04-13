@@ -36,3 +36,9 @@ else
 fi
 
 echo;
+
+# Create symlinks to the .emacs and .vimrc files, as they will be stored in /lang/elisp and /lang/vimscript, respectively.
+
+cd $HOME
+ln -s $HOME/lang/elisp/.emacs .emacs
+ln -s $HOME/lang/vimscript/.vimrc .vimrc
