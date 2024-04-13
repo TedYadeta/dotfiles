@@ -1,6 +1,10 @@
 alias a='alias'
 
+# Shortcuts for editors
+
+a n='nano'
 a v='vim'
+a e='emacs'
 
 # Need to order this up for later when I have time:
 
@@ -10,8 +14,18 @@ a v='vim'
 a eba='vim $HOME/.bash_aliases'
 a sba='vim $HOME/.bash_aliases'
 
-a evrc='vim $HOME/.vimrc'
-a svrc='source $HOME/.vimrc'
+# Nano shortcuts
+
+a nn='nano $HOME/.nanorc'
+
+# Vim shortcuts
+
+a evrc='vim $HOME/lang/vimscript/.vimrc
+a svrc='source $HOME/lang/vimscript/.vimrc'
+
+# Emacs shortcuts
+
+a ee='emacs $HOME/lang/elisp/.emacs'
 
 # I. Aliases for Unix/Linux/GNU Commands
 # ======================================
