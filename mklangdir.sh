@@ -89,6 +89,8 @@ fi
 
 if [ -e /usr/bin/git ];
 then
+  echo "Git found!"
+  git --version | head -n 1
   mkdir git
   echo "Git folder created!"
 else
@@ -137,6 +139,8 @@ fi
 
 if [ -e /usr/bin/ghostscript ]
 then
+  echo "Ghostscript found!"
+  ghostscript --version
   mkdir ghostscript
   echo "PostScript folder created!"
 else
@@ -145,6 +149,8 @@ fi
 
 if [ -e /usr/bin/jq ]
 then
+  echo "jq found!"
+  jq --version
   mkdir json
   echo "JSON folder created!"
 else
@@ -177,6 +183,8 @@ fi
 
 if [ -e /usr/bin/sqlite3 ];
 then
+  echo "SQLite3 found!"
+  sqlite3 --version | awk '{ print $1 }'
   mkdir sql
   echo "SQL folder created!"
 else
