@@ -1,0 +1,11 @@
+# .pythonrc - For custom functions in the Python interpreter
+
+# clear function
+
+import os
+
+clear() = lambda: os.system(clear)
+clear()
+
+# Tab Completion
+# To be added
