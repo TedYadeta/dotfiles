@@ -61,7 +61,7 @@ a oct='octave-cli'
 
 a js='rhino'
 a pl='perl'
-a py3='python3'
+a py3='python3 -i $HOME/lang/python/pythonrc.py'
 a rb='ruby'
 
 # III. Git Aliases
