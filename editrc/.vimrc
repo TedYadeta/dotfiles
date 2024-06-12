@@ -84,3 +84,6 @@ set history=1000
 
 " Perl
 :iabbrev perltmpl #!/usr/bin/perl<cr><cr>use strict;<cr>use warnings;<cr>
+
+" Systemtap
+:iabbrev staptmpl #!/usr/bin/env stap
