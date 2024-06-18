@@ -74,7 +74,7 @@ set history=1000
 :iabbrev bashtmpl #!/bin/bash
 
 " C
-:iabbrev ctmpl #include<stdio.h>
+:iabbrev ctmpl #include<stdio.h><cr>#include<stdlib.h>
 
 " HTML
 :iabbrev htmltmpl <!DOCTYPE HTML><cr><HEAD><cr><TITLE>*</TITLE><cr></HEAD><cr><BODY><cr></BODY></HTML>
