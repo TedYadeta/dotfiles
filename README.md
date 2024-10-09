@@ -6,5 +6,7 @@ Default dotfiles and preferred settings for:
 - tmux
 - vim
 
+as well as my Profile.ps1 for PowerShell
+
 
     
