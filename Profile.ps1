@@ -1,4 +1,7 @@
-﻿Set-Alias gd -Value Get-Date
+# PowerShell 5.1 Profile.ps1
+# Messy - need to organize first by Aliases, and then Functions.
+ 
+ Set-Alias gd -Value Get-Date
 
 Set-Alias -Name gexepol -Value Get-ExecutionPolicy
 # Set-Alias -Name sexepolrs -Value Set-ExecutionPolicy RemoteSigned
