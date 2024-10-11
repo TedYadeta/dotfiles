@@ -66,3 +66,62 @@ function Get-WindowsVersion {
 
 Set-Alias gwinver -Value Get-WindowsVersion
 
+# III) Aliases and Functions for GUI Programs
+# ===========================================
+
+# Command Prompt
+
+function Get-CMD {
+    Start-Process -FilePath C:\Windows\System32\cmd.exe
+}
+
+Set-Alias -Name gcmd -Value Get-CMD
+
+# Computer Management
+
+function Get-CompMgmt {
+    Start-Process -FilePath C:\Windows\System32\compmgmt.msc
+}
+
+Set-Alias -Name gcmg -Value Get-CompMgmt
+
+# Control Panel
+
+function Get-CPanel {
+    Start-Process -FilePath C:\Windows\System32\control.exe
+}
+
+Set-Alias -Name gcp -Value Get-CPanel
+
+# Device Manager
+
+function Get-DevMgr {
+    Start-Process -FilePath C:\Windows\System32\devmgmt.msc
+}
+
+Set-Alias -Name gdm -Value Get-DevMgr 
+
+# Event Viewer
+
+function Get-EventVwr {
+    Start-Process -FilePath C:\Windows\System32\eventvwr.exe
+}
+
+Set-Alias -Name gev -Value Get-EventVwr
+
+# Group Policy Editor
+
+function Get-GPEdit {
+    Start-Process -FilePath C:\Windows\System32\gpedit.msc
+}
+
+Set-Alias -Name ggpe -Value Get-GPEdit
+
+# Registry Editor
+
+function Get-RegEdit {
+    Start-Process -FilePath C:\Windows\System32\regedt32.exe
+}
+
+Set-Alias -Name gre -Value Get-RegEdit
+
