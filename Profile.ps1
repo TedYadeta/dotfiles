@@ -54,6 +54,12 @@ function Get-CPU {
 
 Set-Alias gcpu -Value Get-CPU
 
+function Get-GPU {
+    Get-CimInstance -ClassName Win32_DisplayControllerConfiguration | Select-String -Pattern 'Name'
+}
+
+Set-Alias -Name ggpu -Value Get-GPU
+
 function Get-Uptime {
     Get-ComputerInfo -Property OsUptime
 }
@@ -66,62 +72,118 @@ function Get-WindowsVersion {
 
 Set-Alias gwinver -Value Get-WindowsVersion
 
+
 # III) Aliases and Functions for GUI Programs
 # ===========================================
 
 # Command Prompt
 
-function Get-CMD {
+function Start-CMD {
     Start-Process -FilePath C:\Windows\System32\cmd.exe
 }
 
-Set-Alias -Name gcmd -Value Get-CMD
+Set-Alias -Name scmd -Value Start-CMD
 
 # Computer Management
 
-function Get-CompMgmt {
+function Start-CompMgmt {
     Start-Process -FilePath C:\Windows\System32\compmgmt.msc
 }
 
-Set-Alias -Name gcmg -Value Get-CompMgmt
+Set-Alias -Name scmg -Value Start-CompMgmt
 
 # Control Panel
 
-function Get-CPanel {
+function Start-CPanel {
     Start-Process -FilePath C:\Windows\System32\control.exe
 }
 
-Set-Alias -Name gcp -Value Get-CPanel
+Set-Alias -Name scpl -Value Start-CPanel
 
 # Device Manager
 
-function Get-DevMgr {
+function Start-DevMgr {
     Start-Process -FilePath C:\Windows\System32\devmgmt.msc
 }
 
-Set-Alias -Name gdm -Value Get-DevMgr 
+Set-Alias -Name sdvm -Value Start-DevMgr 
+
+# Disk Defrag
+
+function Start-Defrag {
+    Start-Process -FilePath C:\Windows\System32\dfrgui.exe
+}
+
+Set-Alias -Name sdfg -Value Start-Defrag
+
+# Disk Management
+
+function Start-DiskMgmt {
+    Start-Process -FilePath C:\Windows\System32\diskmgmt.msc
+}
+
+Set-Alias -Name sdkm -Value Start-DiskMgmt
 
 # Event Viewer
 
-function Get-EventVwr {
+function Start-EventVwr {
     Start-Process -FilePath C:\Windows\System32\eventvwr.exe
 }
 
-Set-Alias -Name gev -Value Get-EventVwr
+Set-Alias -Name sevt -Value Start-EventVwr
 
 # Group Policy Editor
 
-function Get-GPEdit {
+function Start-GPEdit {
     Start-Process -FilePath C:\Windows\System32\gpedit.msc
 }
 
-Set-Alias -Name ggpe -Value Get-GPEdit
+Set-Alias -Name sgpe -Value Start-GPEdit
+
+# Performance Monitor
+
+function Start-PerfMon {
+    Start-Process -FilePath C:\Windows\System32\perfmon.exe
+}
+
+Set-Alias -Name spfm -Value Start-PerfMon
 
 # Registry Editor
 
-function Get-RegEdit {
+function Start-RegEdit {
     Start-Process -FilePath C:\Windows\System32\regedt32.exe
 }
 
-Set-Alias -Name gre -Value Get-RegEdit
+Set-Alias -Name sreg -Value Start-RegEdit
 
+# Resource Monitor
+
+function Start-ResMon {
+    Start-Process -FilePath C:\Windows\System32\resmon.exe
+}
+
+Set-Alias -Name srsm -Value Start-ResMon
+
+# Server Manager
+
+function Start-ServMan {
+    Start-Process -FilePath C:\Windows\System32\ServerManager.exe
+}
+
+Set-Alias -Name ssvm -Value Start-ServMan
+
+# Task Manager
+
+function Start-TaskMan {
+    Start-Process -FilePath C:\Windows\System32\taskmgr.exe
+}
+
+Set-Alias -Name stkm -Value Start-TaskMan
+
+# Task Scheduler
+
+function Start-TaskSched {
+    Start-Process -FilePath C:\Windows\System32\taskschd.msc
+}
+
+Set-Alias -Name stks -Value Start-TaskSched
