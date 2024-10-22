@@ -6,6 +6,8 @@
 # I) Aliases for Built-In Commands
 # ================================
 
+Set-Alias -Name clsdns -Value Clear-DnsClientCache
+
 Set-Alias -Name gd -Value Get-Date
 
 Set-Alias -Name gexepol -Value Get-ExecutionPolicy
@@ -15,6 +17,10 @@ Set-Alias -Name gh -Value Get-Help
 Set-Alias -Name gnic -Value Get-NetIPConfiguration
 
 Set-Alias -Name uh -Value Update-Help
+
+Set-Alias -Name regdns -Value Register-DnsClient
+
+Set-Alias -Name rstrt -Value Restart-Computer
 
 Set-Alias -Name stop -Value Stop-Computer
 
@@ -75,6 +81,9 @@ Set-Alias gwinver -Value Get-WindowsVersion
 
 # III) Aliases and Functions for GUI Programs
 # ===========================================
+#
+# III.a) Aliases and Functions for Built-In Applications (Win10)
+# --------------------------------------------------------------
 
 # Command Prompt
 
@@ -108,13 +117,13 @@ function Start-DevMgr {
 
 Set-Alias -Name sdvm -Value Start-DevMgr 
 
-# Disk Defrag
+# Drive Optimizer
 
-function Start-Defrag {
+function Start-Optimizer {
     Start-Process -FilePath C:\Windows\System32\dfrgui.exe
 }
 
-Set-Alias -Name sdfg -Value Start-Defrag
+Set-Alias -Name sopt -Value Start-Optimizer
 
 # Disk Management
 
@@ -187,3 +196,67 @@ function Start-TaskSched {
 }
 
 Set-Alias -Name stks -Value Start-TaskSched
+
+# III.b) Aliases and Functions Relating to Active Directory
+# ---------------------------------------------------------
+#
+# (Note: Obviously, must have AD-related Applications open,
+# otherwise, what's the point?
+
+# Active Directory Administrative Center
+
+function Start-ADAC {
+    Start-Process -FilePath C:\Windows\System32\dsac.exe
+}
+
+Set-Alias -Name sadac -Value Start-ADAC
+
+# Active Directory Domains and Trusts
+
+function Start-ADDT {
+    Start-Process -FilePath C:\Windows\System32\domain.msc
+}
+
+Set-Alias -Name saddt -Value Start-ADDT
+
+# Active Directory Sites and Services
+
+function Start-ADSS {
+    Start-Process -FilePath C:\Windows\System32\dssite.msc
+}
+
+Set-Alias -Name sadss -Value Start-ADSS 
+
+# Active Directory Users and Groups
+
+function Start-ADUG {
+    Start-Process -FilePath C:\Windows\System32\dsa.msc
+}
+
+Set-Alias -Name sadug -Value Start-ADUG
+
+
+# III.c) Aliases and Functions relating to Hyper-V
+# ------------------------------------------------
+
+function Start-HVMan {
+    Start-Process -FilePath C:\Windows\System32\virtmgmt.msc
+}
+
+Set-Alias -Name shvm -Value Start-HVMan
+
+function Start-HVQC {
+    Start-Process -FilePath 'C:\Program Files\Hyper-V\VMCreate.exe'
+}
+
+Set-Alias -Name shvqc -Value Start-HVQC
+
+
+
+# III.d) PowerShell Shortcuts to Specific Settings
+# ================================================
+
+# Future Idea: See if you can get each version sub-section
+# of Windows Settings to launch as well.
+
+# For example, the Display Section in System can be launched from dpiscaling.exe
