@@ -2,6 +2,8 @@
 Default dotfiles and preferred settings for:
 
 - bashrc
+- bwm-ng
+- cshrc
 - nano
 - tmux
 - vim
