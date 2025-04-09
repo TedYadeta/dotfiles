@@ -20,7 +20,7 @@ a nn='nano $HOME/.nanorc'
 
 # Vim shortcuts
 
-a evrc='vim $HOME/lang/vimscript/.vimrc
+a evrc='vim $HOME/lang/vimscript/.vimrc'
 a svrc='source $HOME/lang/vimscript/.vimrc'
 
 # Emacs shortcuts
@@ -36,6 +36,8 @@ a rmd='rmdir'
 
 a m='man'
 a i='info'
+
+a whatos='cat /etc/os-release'
 
 
 # II. Aliases for Programming Languages, their interpreters and compilers
