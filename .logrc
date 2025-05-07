@@ -1,0 +1,17 @@
+# .logrc - for troubleshooting macOS issues
+
+show:
+  --color always
+  --debug
+  --info
+  --last 1d
+  --pager
+  --signpost
+  --style compact
+  --timezone local
+
+stream:
+  --style compact
+  --timeout 1m
+
+# look into predicates
