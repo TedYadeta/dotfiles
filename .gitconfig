@@ -1,0 +1,125 @@
+[Alias]
+    # 1. Setup and Config
+    gcfg = 'git config'
+    ghlp = 'git help'
+    gbug = 'git bugreport'
+    
+    # 2. Getting and Creating Projects
+    
+    gint = 'git init'
+    gclo = 'git clone'
+
+    #3. Basic Snapshotting
+
+    gadd = 'git add'
+    gsts = 'git status'
+    gdff = 'git diff'
+    gcom = 'git commit'
+    gnts = 'git notes
+    gres = 'git restore'
+    grst = 'git reset'
+    grm = 'git rm'
+    gmv = 'git mv'
+
+    #4. Branching and Merging
+
+    gbch = 'git branch'
+    gchk = 'git checkout'
+    gswt = 'git switch'
+    gmrg = 'git merge'
+    gmgt = 'git mergetool'
+    glog = 'git log'
+    gsth = 'git stash'
+    gtag = 'git tag'
+    gwrt = 'git worktree'
+
+    #5. Sharing and Updating Projects
+
+    gfth = 'git fetch'
+    gpll = 'git pull'
+    gpsh = 'pit push'
+    grmt = 'git remote'
+    gsmd = 'git submodule'
+
+    #6. Inspection and Comparison
+
+    gshw = 'git show'
+    gdft = 'git difftool'
+    grdf = 'git range-diff'
+    gslg = 'git shortlog'
+    gdes = 'git describe'
+
+    #7. Patching
+
+    gapp = 'git apply'
+    gcpk = 'git cherry-pick'
+    greb = 'git rebase'
+    grev = 'git revert'
+
+    #8. Debugging
+
+    gbis = 'git bisect'
+    gblm = 'git blame'
+    ggrp = 'git grep'
+
+    #9. Email
+
+    gam = 'git am'
+    gfmp = 'git format-patch'
+    gsne = 'git send-email'
+    greq = 'git request-pull'
+
+    #10. External Systems
+    
+    gsvn = 'git svn'
+    gfim = 'git fast-import'
+
+    #11. Administration
+
+    gcln = 'git clean'
+    ggc = 'git gc'
+    gfsk = 'git fsck'
+    grfg = 'git reflog'
+    gflb = 'git filter-branch'
+    gweb = 'git instaweb'
+    garc = 'git archive'
+    gbnd = 'git bundle'
+
+   #12. Server Administration
+
+    gdae = 'git daemon'
+    gusi = 'git update-server-info'
+
+    #13. Plumbing Commands
+
+    gcat = 'git cat-file'
+    gcki = 'git check-ignore'
+    gcix = 'git checkout-index'
+    gcmt = 'git commit-tree
+    gcob = 'git count-objects'
+    gdfx = 'git diff-index'
+    gfer = 'git for-each-ref'
+    ghob = 'git hash-object'
+    glsf = 'git ls-files'
+    glst = 'git ls-tree'
+    gmgb = 'git merge-base'
+    grdt = 'git read-tree'
+    grvl = 'git rev-list'
+    grvp = 'git rev-parse'
+    gshr = 'git show-ref'
+    gsym = 'git symbolic-ref'
+    gupx = 'git update-index'
+    gvpk = 'git verify-pack'
+    gwrt = 'git write-tree'
+
+    grrr = 'git rerere' # Only necessary if 'rerere' is enabled
+    
+
+[Color]
+    ui = auto
+
+[Core]
+    editor = '/usr/bin/vim'
+
+[Help]
+    autocorrect = immediate
