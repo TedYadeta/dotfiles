@@ -8,6 +8,8 @@
 
 Set-Alias -Name clsdns -Value Clear-DnsClientCache
 
+Set-Alias -Name gacl -Value Get-Acl
+
 Set-Alias -Name gd -Value Get-Date
 
 Set-Alias -Name gexepol -Value Get-ExecutionPolicy
