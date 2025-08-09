@@ -67,6 +67,9 @@ set history=1000
 
 " To automatically type any templates/one-liners I need for certain languages.
 
+" Ansible/YAML (Localhost Testing Template)                                                                                                                                                                                                    
+:iabbrev anstmpl ---<cr> - name: {NAME}<cr>   hosts: localhost<cr>   connection: local<cr>   gather_facts: no<cr><cr>   tasks:
+
 " Awk
 :iabbrev awktmpl #!/usr/bin/awk
 
