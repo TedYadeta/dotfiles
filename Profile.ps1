@@ -199,6 +199,14 @@ function Start-TaskSched {
 
 Set-Alias -Name stks -Value Start-TaskSched
 
+function Start-WbemTest {
+    Start-Process -FilePath C:\Windows\System32\wbem\wbemtest.exe
+}
+
+# Note to self, in a future Section, look into WQL to have some default WQL queries on standby.
+
+Set-Alias -Name swbem -Value Start-WbemTest
+
 # III.b) Aliases and Functions Relating to Active Directory
 # ---------------------------------------------------------
 #
@@ -262,3 +270,4 @@ Set-Alias -Name shvqc -Value Start-HVQC
 # of Windows Settings to launch as well.
 
 # For example, the Display Section in System can be launched from dpiscaling.exe
+
