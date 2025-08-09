@@ -64,5 +64,18 @@ a oct='octave-cli'
 
 a js='rhino'
 a pl='perl'
-a py3='python3 -i $HOME/lang/python/pythonrc.py'
+a py3='python3'
 a rb='ruby'
+
+# II.c) Aliases for Ansible
+# -------------------------
+
+a ans='ansible'
+a ans-cfg='ansible-config'
+a ans-con='ansible-console'
+a ans-doc='ansible-doc'
+a ans-gxy='ansible-galaxy'
+a ans-inv='ansible-inventory'
+a ans-pbk='ansible-playbook'
+a ans-pul='ansible-pull'
+a ans-vlt='ansible-vault'
