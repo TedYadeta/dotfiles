@@ -1,0 +1,26 @@
+---
+# WARNING: HAVE NOT FULLY TESTED IN ALL POSSIBLE ENVIRONMENTS
+# MIN. VERSION - Ansible Core 2.14.18
+- name: Developer Environment Setup
+  hosts: localhost
+  connection: local
+
+  tasks:
+  - name: Update and Upgrade all APT Packages
+    ansible.builtin.apt:
+      name: "*"
+      state: latest
+      best: true
+      upgrade: yes
+    when: ansible_os_family == 'Debian'
+
+  - name: Update and Upgrade all DNF Packages
+    ansible.builtin.dnf:
+      name: "*"
+      security: true
+      state: latest
+      update_only: true
+    when: ansible_os_family == "RedHat"
+
+
+# TODO // Add sections for Pacman (Arch-based setups/ansible_os_family == 'ArchLinux') and AutoYAST (SuSE-based setups/ansible_os_family == 'Suse')
