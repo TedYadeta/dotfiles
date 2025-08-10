@@ -77,9 +77,6 @@ a rb 'ruby'
 # II.c) Aliases for Ansible
 # -------------------------
 
-# II.c) Aliases for Ansible
-# -------------------------
-
 a ans 'ansible'
 a ans-cfg 'ansible-config'
 a ans-con 'ansible-console'
