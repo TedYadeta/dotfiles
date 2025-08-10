@@ -17,7 +17,7 @@ This is a bit of a start towards something I am calling "DevEnvOps." I am not th
 
 ## DevEnvOps
 
-"DevEnvOps" or "Developer Environment Operations" is the art and practice of apply DevOps practices to the Developer's own workstation, the ultimate in applying "shift-left" to the entire process. By starting at the absolute left of the entire cycle, ensuring the proper practice of standardization across Operating Systems to Shells, one ensures a complete harmony from the beginning, and in turn, it echoes across the entire process.
+"DevEnvOps" or "Developer Environment Operations" is the art and practice of applying DevOps practices to the Developer's own workstation, the ultimate in applying "shift-left" to the entire process. By starting at the absolute left of the entire cycle, ensuring the proper practice of standardization across Operating Systems to Shells, one ensures a complete harmony from the beginning, and in turn, it echoes across the entire process.
 
 
     
