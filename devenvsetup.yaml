@@ -21,6 +21,3 @@
       state: latest
       update_only: true
     when: ansible_os_family == "RedHat"
-
-
-# TODO // Add sections for Pacman (Arch-based setups/ansible_os_family == 'ArchLinux') and AutoYAST (SuSE-based setups/ansible_os_family == 'Suse')
