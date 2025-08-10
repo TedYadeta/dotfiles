@@ -5,6 +5,7 @@ Default dotfiles and preferred settings for:
 - bwm-ng
 - cshrc
 - git
+- htop
 - log (macOS command)
 - nano
 - PowerShell
