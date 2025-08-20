@@ -18,6 +18,8 @@ Set-Alias -Name gh -Value Get-Help
 
 Set-Alias -Name gnic -Value Get-NetIPConfiguration
 
+Set-Alias -Name grep -Value Select-String
+
 Set-Alias -Name uh -Value Update-Help
 
 Set-Alias -Name regdns -Value Register-DnsClient
@@ -273,5 +275,6 @@ Set-Alias -Name shvqc -Value Start-HVQC
 # of Windows Settings to launch as well.
 
 # For example, the Display Section in System can be launched from dpiscaling.exe
+
 
 
