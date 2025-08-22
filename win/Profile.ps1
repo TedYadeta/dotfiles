@@ -20,17 +20,21 @@ Set-Alias -Name gnic -Value Get-NetIPConfiguration
 
 Set-Alias -Name grep -Value Select-String
 
-Set-Alias -Name uh -Value Update-Help
+Set-Alias -Name lg -Value logoff
 
 Set-Alias -Name regdns -Value Register-DnsClient
 
 Set-Alias -Name rstrt -Value Restart-Computer
 
+Set-Alias -Name ssm -Value Set-StrictMode
+
 Set-Alias -Name stop -Value Stop-Computer
 
-Set-Alias -Name wrh -Value Write-Host
+Set-Alias -Name time -Value Measure-Command 
 
-Set-Alias -Name lg -Value logoff
+Set-Alias -Name uh -Value Update-Help
+
+Set-Alias -Name wrh -Value Write-Host
 
 Set-Alias -Name wt -Value wt
 # Note, technically this already exists by default on Windows 11 BUT this allows it to show up after running Get-Alias
@@ -275,6 +279,7 @@ Set-Alias -Name shvqc -Value Start-HVQC
 # of Windows Settings to launch as well.
 
 # For example, the Display Section in System can be launched from dpiscaling.exe
+
 
 
 
