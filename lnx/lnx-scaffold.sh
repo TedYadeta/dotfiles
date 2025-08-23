@@ -4,8 +4,8 @@
 echo "Creating 'lang' scaffolding in user's homedir..."
 sleep 10;
 
-mkdir ~/lang/bash/testlang
-LANGPATH=~/lang/bash/testlang
+mkdir ~/lang
+LANGPATH=~/lang
 
 echo;
 if [ -e /usr/bin/as ]
