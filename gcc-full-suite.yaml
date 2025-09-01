@@ -1,0 +1,18 @@
+---
+- name: GCC Full Suite
+  hosts: localhost
+  connection: local
+  gather_facts: yes
+
+  tasks:
+  - name: Install all GCC Compilers
+    ansible.builtin.package:
+      name:
+        - gcc
+        - g++
+        - gcc-gnat
+        - gcc-gdc
+        - gcc-gfortran
+        - gcc-go
+      state: latest
+
