@@ -1,0 +1,19 @@
+---
+- name: Interpreters
+  hosts: localhost
+  connection: local
+  gather_facts: yes
+
+  tasks:
+  - name: Install all major interpreted languages
+    ansible.builtin.package:
+      name:
+        - gawk
+        - bc
+        - lua
+        - perl
+        - python
+        - ruby
+        - sed
+      state: latest
+
