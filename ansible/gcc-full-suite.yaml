@@ -14,5 +14,7 @@
         - gcc-gdc
         - gcc-gfortran
         - gcc-go
+        - ansible
+        - git
       state: latest
 
