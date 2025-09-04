@@ -15,5 +15,7 @@
         - python
         - ruby
         - sed
+        - ansible
+        - git
       state: latest
 
