@@ -1,0 +1,15 @@
+---
+- name: Web Development Setup
+  hosts: localhost
+  connection: local
+  gather_facts: yes
+
+  tasks:
+  - name: Install Web Servers
+    ansible.builtin.package: 
+      name:
+        - httpd
+        - nginx
+        - php-cli
+      state: latest
+

@@ -1,0 +1,24 @@
+---
+- name: Basic Developer Environment Setup
+  hosts: localhost
+  connection: local
+  gather_facts: yes
+
+  tasks:
+  - name: Install Basic DevEnv Tools
+    ansible.builtin.package: 
+      name:
+        - autoconf
+        - automake
+        - bison
+        - cmake
+        - flex
+        - gdb
+        - git
+        - libtool
+        - m4
+        - make
+        - readline
+        - shellcheck
+      state: latest
+

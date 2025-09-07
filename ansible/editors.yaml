@@ -1,0 +1,15 @@
+---
+- name: Editor Installation
+  hosts: localhost
+  connection: local
+  gather_facts: yes
+
+  tasks:
+  - name: Install Text Editors
+    ansible.builtin.package: 
+      name:
+        - emacs
+        - nano
+        - vim
+      state: latest
+

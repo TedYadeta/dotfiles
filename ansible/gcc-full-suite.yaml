@@ -6,7 +6,7 @@
 
   tasks:
   - name: Install all GCC Compilers
-    ansible.builtin.package:
+    ansible.builtin.package: 
       name:
         - gcc
         - g++
@@ -14,7 +14,5 @@
         - gcc-gdc
         - gcc-gfortran
         - gcc-go
-        - ansible
-        - git
       state: latest
 
