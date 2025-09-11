@@ -11,7 +11,8 @@ Default dotfiles and preferred settings for:
 - PowerShell
 - tmux
 - vim
-- as well as primitive Ansible playbooks for quick environment setups (Min. version of Ansible Core 2.14.18)
+- also provided simple scaffolding scripts for available OSes for quick environment setups
+- as well as basic Ansible playbooks for quick environment setups (Min. version of Ansible Core 2.14.18)
 
 ## Update: 08/09/25
 This is a bit of a start towards something I am calling "DevEnvOps." I am not the first to implement something by this name (please see this Git [repository](https://github.com/JasonQSY/DevEnvOps) from 2017 or this [Medium](https://medium.com/@matthewcasperson/introducing-devenvops-26c35ee716bf) article, but there is a nice ring to it that I would like to provide a more formal definition, which is added below.
