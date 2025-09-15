@@ -93,3 +93,9 @@ set history=1000
 
 " Systemtap
 :iabbrev staptmpl #!/usr/bin/env stap
+
+" tcsh
+:iabbrev tcshtmpl #!/bin/tcsh
+
+" zsh
+:iabbrev zshtmpl #!/bin/zsh
