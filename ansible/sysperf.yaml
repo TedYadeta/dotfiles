@@ -1,9 +1,17 @@
-# Insert here
-# playbook for system performance tools
-# perf
-# systemtap
-# bpftool
-# htop
-# nvtop
-# iostat
+---
+- name: System Performance Tools
+  hosts: localhost
+  connection: local
+  gather_facts: yes
 
+  tasks:
+  - name: Install System Performance Tools
+    ansible.builtin.package:
+      name:
+        - bpftool
+        - dtrace
+        - perf
+        - procps-ng
+        - sysstat
+        - systemtap
+      state: latest
