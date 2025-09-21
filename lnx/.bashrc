@@ -40,6 +40,15 @@ a i='info'
 a whatos='cat /etc/os-release'
 
 
+# I.a Aliases for Midnight Commander 
+# ==================================
+
+a mcc='mcview'
+a mcd='mcdiff'
+a mce='mcedit'
+
+
+
 # II. Aliases for Programming Languages, their interpreters and compilers
 # =======================================================================
 
