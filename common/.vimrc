@@ -21,6 +21,7 @@ set showmode
 set showmatch
 set hlsearch
 set history=1000
+set title 
 
 " II - Mesh Mode Shortcuts
 " To help navigate between modes easier.
