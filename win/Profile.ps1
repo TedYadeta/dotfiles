@@ -254,6 +254,10 @@ function Start-ADUG {
 
 Set-Alias -Name sadug -Value Start-ADUG
 
+function ldapquery {
+    Get-ADUser -LDAPFilter
+}
+
 
 # III.c) Aliases and Functions relating to Hyper-V
 # ------------------------------------------------
@@ -279,6 +283,7 @@ Set-Alias -Name shvqc -Value Start-HVQC
 # of Windows Settings to launch as well.
 
 # For example, the Display Section in System can be launched from dpiscaling.exe
+
 
 
 
