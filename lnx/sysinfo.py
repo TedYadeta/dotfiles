@@ -1,4 +1,7 @@
-import os, platform, socket, getpass
+import getpass
+import os
+import platform
+import socket
 
 hostname = socket.gethostname()
 arch = platform.machine()
