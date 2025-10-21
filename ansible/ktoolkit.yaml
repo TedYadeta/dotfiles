@@ -1,0 +1,35 @@
+---
+- name: Kernel Toolkit
+  hosts: localhost
+  connection: local
+  gather_facts: yes
+
+  tasks:
+  - name: Install all Kernel Build Utilities
+    ansible.builtin.package:
+      name:
+        - bash
+        - bc
+        - binutils
+        - bison
+        - btrfs-progs
+        - dwarves
+        - e2fsprogs
+        - flex
+        - gcc
+        - kmod
+        - make
+        - mcelog
+        - nfs-utils
+        - nftables
+        - openssl
+        - perl
+        - ppp
+        - procps-ng
+        - python3
+        - quota
+        - squashfs-tools
+        - tar
+        - util-linux
+        - xfsprogs
+
