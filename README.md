@@ -11,8 +11,9 @@ Default dotfiles and preferred settings for:
 - PowerShell
 - tmux
 - vim
-- also provided simple scaffolding scripts for available OSes for quick environment setups
-- as well as basic Ansible playbooks for quick environment setups (Min. version of Ansible Core 2.14.18)
+- simple scaffolding scripts for available OSes for quick environment setups
+- basic Ansible playbooks for quick environment setups
+- basic scripts for gathering system information
 
 ### Mininum System Requirements
 
