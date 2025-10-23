@@ -19,14 +19,25 @@ Default dotfiles and preferred settings for:
 
 #### Windows:
 Windows 11 or later.
+PowerSHell Ver. 5.1 or later.
 
 #### macOS:
 macOS Monterey or later.
 
+#### Linux:
+
+##### Requires Kernel 6.15 and newer installed on the system
+
+##### RHEL:
+RHEL 9 Family (Rocky 9, AlmaLinux 9, etc.) OR Fedora 40 and newer
+
+
 ### Minimum Language/Tool Version Requirements
 
 - Ansible Core 2.14.18 or later
+- Bash 5.3.31 or later
 - Python 3.13.6 or later
+- Vim version 9.1 or later
 
 ## Update: 08/09/25
 This is a bit of a start towards something I am calling "DevEnvOps." I am not the first to implement something by this name (please see this Git [repository](https://github.com/JasonQSY/DevEnvOps) from 2017 or this [Medium](https://medium.com/@matthewcasperson/introducing-devenvops-26c35ee716bf) article, but there is a nice ring to it that I would like to provide a more formal definition, which is added below.
