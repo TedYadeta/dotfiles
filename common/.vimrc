@@ -89,6 +89,12 @@ set title
 " Perl
 :iabbrev perltmpl #!/usr/bin/perl<cr><cr>use strict;<cr>use warnings;<cr>
 
+" Python3
+:iabbrev py3tmpl #!/usr/bin/env python3
+
+" Ruby
+:iabbrev rbtmpl #!/usr/bin/env ruby
+
 " Sed
 :iabbrev sedtmpl #!/usr/bin/sed -f
 
