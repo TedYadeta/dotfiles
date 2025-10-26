@@ -38,6 +38,7 @@ RHEL 9 Family (Rocky 9, AlmaLinux 9, etc.) OR Fedora 40 and newer
 - Bash 5.3.31 or later
 - Perl 5.40.3 or later
 - Python 3.13.6 or later
+- Ruby 3.3.8 or later
 - Vim version 9.1 or later
 
 ## Update: 08/09/25
