@@ -1,0 +1,9 @@
+---
+- name: Get System Information
+  hosts: localhost
+  tasks:
+    - name: Print System Information using Jinja2 Template
+      ansible.builtin.template:
+        src: "SRC/sysinfo.j2"
+        dest: "DEST/sysinfo.j2"
+
