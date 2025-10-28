@@ -1,0 +1,10 @@
+Architecture: {{ansible_facts['architecture'] }}
+Hostname: {{ ansible_facts['hostname'] }}
+OS: {{ ansible_facts['distribution'] }}
+User: {{ ansible_facts['env']['LOGNAME'] }}
+Shell: {{ ansible_facts['env']['SHELL'] }}
+Kernel Version: {{ ansible_facts['kernel'] }}
+IP Address: {{ ansible_facts['default_ipv4']['address'] }}
+Ansible Version: {{ ansible_version.full }}
+Ansible Python Version: {{ansible_facts['python_version'] }}
+
