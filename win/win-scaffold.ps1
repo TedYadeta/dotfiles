@@ -3,6 +3,10 @@
 
 
 New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang
+
+New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang\AdvancedQuerySyntax
 New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang\BatchScript
+New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang\JScript
 New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang\PowerShell
+New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang\RegistryEdits
 New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang\VBScript
