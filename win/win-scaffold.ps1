@@ -18,4 +18,3 @@ New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang\RegHives
 New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang\VBScript
 New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang\WQLQueries
 New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang\XML
-
