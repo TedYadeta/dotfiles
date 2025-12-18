@@ -62,6 +62,10 @@ function sexepolr {
     Set-ExecutionPolicy Restricted
 }
 
+function Kill-PSSession {
+    Get-PSSession | Remove-PSSession
+}
+
 # II.b) System Information
 # ------------------------
 
@@ -283,6 +287,7 @@ Set-Alias -Name shvqc -Value Start-HVQC
 # of Windows Settings to launch as well.
 
 # For example, the Display Section in System can be launched from dpiscaling.exe
+
 
 
 
