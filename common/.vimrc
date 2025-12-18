@@ -80,11 +80,17 @@ set title
 " C
 :iabbrev ctmpl #include<stdio.h><cr>#include<stdlib.h>
 
+" C (Linux Kernel Module Programming)
+:iabbrev modtmpl #include <linux/init.h><cr>#include <linux/kernel.h><cr>#include <linux.module.h><cr>
+
 " HTML
 :iabbrev htmltmpl <!DOCTYPE HTML><cr><HEAD><cr><TITLE>*</TITLE><cr></HEAD><cr><BODY><cr></BODY></HTML>
 
 " Java
 :iabbrev javatmpl public class CLASSNAME {<cr><tab>public static void main(String[] args) {<cr><cr><tab>}<cr>}
+
+" LaTeX - Need to work on this one!
+"{documentclass}
 
 " Perl
 :iabbrev perltmpl #!/usr/bin/perl<cr><cr>use strict;<cr>use warnings;<cr>
@@ -97,6 +103,9 @@ set title
 
 " Sed
 :iabbrev sedtmpl #!/usr/bin/sed -f
+
+" Systemd Service
+:iabbrev sysdtmpl [Unit]<cr>Description=<cr>After=<cr><cr>[Service]<cr>Type=<cr>ExecStart=<cr><cr>[Install]<cr>WantedBy=<cr><cr>
 
 " Systemtap
 :iabbrev staptmpl #!/usr/bin/env stap
