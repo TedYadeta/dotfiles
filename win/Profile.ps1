@@ -66,6 +66,19 @@ function Kill-PSSession {
     Get-PSSession | Remove-PSSession
 }
 
+function Start-GodMode {
+    New-Item -Path 'C:\Users\$env:USERNAME\lang\GodMode' -ItemType Directory -Name "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}" -Force
+    }
+# Note: This static path is established in win-scaffold.ps1. Failure to run win-scaffold.ps1 will cause Start-GodMode and Stop-GodMode to now work.
+
+Set-Alias -Name stgm -Value Start-GodMode
+
+function Stop-GodMode {
+    Remove-Item -Path 'C:\Users\$env:USERNAME\lang\GodMode\*' -Force
+}
+
+Set-Alias -Name spgm -Value Stop-GodMode
+
 # II.b) System Information
 # ------------------------
 
@@ -287,6 +300,7 @@ Set-Alias -Name shvqc -Value Start-HVQC
 # of Windows Settings to launch as well.
 
 # For example, the Display Section in System can be launched from dpiscaling.exe
+
 
 
 
