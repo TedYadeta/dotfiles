@@ -19,7 +19,7 @@ Default dotfiles and preferred settings for:
 
 #### Windows:
 Windows 11 or later.
-PowerSHell Ver. 5.1 or later.
+PowerShell Ver. 5.1 or later.
 
 #### macOS:
 macOS Monterey or later.
