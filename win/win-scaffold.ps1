@@ -3,6 +3,7 @@
 
 
 New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang
+Set-Location -Path C:\Users\$env:USERNAME\lang
 
 $langdirs = @("AdminTemplates",
               "AdvancedQuerySyntax", 
@@ -40,3 +41,11 @@ $langdirs = @("AdminTemplates",
 foreach ($langdir in $langdirs)
     {New-Item -Path $langdir -ItemType Directory -Force}
 
+Set-Location -Path C:\Users\$env:USERNAME\lang\PowerShell 
+
+$pwshlangdirs = @("Manifests",
+                 "Modules",
+                 "Scripts")
+
+foreach ($pwshlangdir in $pwshlangdirs)
+    {New-Item -Path $pwshlangdir -ItemType Directory -Force}
