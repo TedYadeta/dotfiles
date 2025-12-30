@@ -113,5 +113,8 @@ set title
 " tcsh
 :iabbrev tcshtmpl #!/bin/tcsh
 
+" xml
+:iabbrev xmltmpl <?xml version="1.0" encoding="UTF-8"?>
+
 " zsh
 :iabbrev zshtmpl #!/bin/zsh
