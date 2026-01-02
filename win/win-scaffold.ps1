@@ -24,6 +24,7 @@ $langdirs = @("AdminTemplates",
               "JSON", 
               "JScript", 
               "LINQ",
+              "LNK",
               "MOF",
               "MSBuild",
               "MSC", 
@@ -49,3 +50,4 @@ $pwshlangdirs = @("Manifests",
 
 foreach ($pwshlangdir in $pwshlangdirs)
     {New-Item -Path $pwshlangdir -ItemType Directory -Force}
+
