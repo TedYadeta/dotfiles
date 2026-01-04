@@ -6,28 +6,31 @@ New-Item -ItemType Directory -Path C:\Users\$env:USERNAME\lang
 Set-Location -Path C:\Users\$env:USERNAME\lang
 
 $langdirs = @("AdminTemplates",
-              "AdvancedQuerySyntax", 
+              "AdvancedQuerySyntax",
+              "ASP",
               "BatchScript", 
               "Cabinets",
               "CPL", 
               "CSV",
               "CSharp",
               "DAT",
+              "DDF",
               "DLL",
               "EVT",
               "EXE",
               "Firewall", 
               "FSharp",
               "GodMode", 
-              "INI",
               "INF",
+              "INI",
               "JSON", 
               "JScript", 
               "LINQ",
               "LNK",
               "MOF",
               "MSBuild",
-              "MSC", 
+              "MSC",
+              "MSIL",
               "PowerShell",
               "Python",
               "RegEntries", 
@@ -50,4 +53,5 @@ $pwshlangdirs = @("Manifests",
 
 foreach ($pwshlangdir in $pwshlangdirs)
     {New-Item -Path $pwshlangdir -ItemType Directory -Force}
+
 
