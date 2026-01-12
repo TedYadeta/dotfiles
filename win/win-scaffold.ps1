@@ -27,7 +27,6 @@ $langdirs = @("AdminTemplates",
               "JSON", 
               "JScript", 
               "LINQ",
-              "LNK",
               "MOF",
               "MSBuild",
               "MSC",
@@ -36,7 +35,8 @@ $langdirs = @("AdminTemplates",
               "Python",
               "RegEntries", 
               "RegHives", 
-              "RegPolicies", 
+              "RegPolicies",
+              "Symlink",
               "VBScript",
               "VisualBasic",
               "WPF",
@@ -54,6 +54,12 @@ $pwshlangdirs = @("Manifests",
 
 foreach ($pwshlangdir in $pwshlangdirs)
     {New-Item -Path $pwshlangdir -ItemType Directory -Force}
+
+$xmllangdirs = @("AutoUnattend",
+                 "ScheduledTasks")
+
+foreach ($xmllangdir in $xmllangdirs)
+    {New-Item -Path $xmllangdir -ItemType Directory -Force}
 
 
 
