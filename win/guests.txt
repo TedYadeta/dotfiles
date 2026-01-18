@@ -1,0 +1,10 @@
+0.0.0.0       data.microsoft.com
+0.0.0.0       msftconnecttest.com
+0.0.0.0       azureedge.net
+0.0.0.0       activity.windows.com
+0.0.0.0       bingapis.com
+0.0.0.0       msedge.net
+0.0.0.0       assets.msn.com
+0.0.0.0       scorecardresearch.com
+0.0.0.0       edge.microsoft.com
+0.0.0.0       data.msn.com
