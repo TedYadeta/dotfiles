@@ -13,8 +13,15 @@ mkdir "C:\Users\%USERNAME%\lang\Symlink\Server"
 
 REM - APPLICATIONS FOUND BY DEFAULT ON WINDOWS 11 HOME 
 
+mklink "C:\Users\%USERNAME%\lang\Symlink\Home\Calculator" "C:\Windows\System32\calc.exe"
 mklink "C:\Users\%USERNAME%\lang\Symlink\Home\CharacterMap" "C:\Windows\System32\charmap.exe"
-mklink "C:\Users\%USERNAME%\lang\Symlink\Home\CMDPrompt" "C:\Windows\System32\cmd.exe"
+mklink "C:\Users\%USERNAME%\lang\Symlink\Home\CleanManager" "C:\Windows\System32\cleanmgr.exe"
+mklink "C:\Users\%USERNAME%\lang\Symlink\Home\ColorManagement" "C:\Windows\System32\colorcpl.exe"
+mklink "C:\Users\%USERNAME%\lang\Symlink\Home\CommandPrompt" "C:\Windows\System32\cmd.exe"
+mklink "C:\Users\%USERNAME%\lang\Symlink\Home\ComputerDefaultsApps" "C:\Windows\System32\ComputerDefaults.exe"
+mklink "C:\Users\%USERNAME%\lang\Symlink\Home\ComputerManagement" "C:\Windows\System32\CompMgmtLauncher.exe"
+mklink "C:\Users\%USERNAME%\lang\Symlink\Home\ControlPanel" "C:\Windows\System32\control.exe"
+mklink "C:\Users\%USERNAME%\lang\Symlink\Home\CredentialWizard" "C:\Windows\System32\credwiz.exe"
 
 mklink "C:\Users\%USERNAME%\lang\Symlink\Home\EventViewer" "C:\Windows\System32\eventvwr.exe"
 
@@ -34,6 +41,7 @@ mklink "C:\Users\%USERNAME%\lang\Symlink\Home\ProblemStepsRecorder" "C:\Windows\
 mklink "C:\Users\%USERNAME%\lang\Symlink\Home\RemoteDesktopConnection" "C:\Windows\System32\mstsc.exe"
 mklink "C:\Users\%USERNAME%\lang\Symlink\Home\ResourceMonitor" "C:\Windows\System32\resmon.exe"
 
+mklink "C:\Users\%USERNAME%\lang\Symlink\Home\SQLClientConfigUtility" "C:\Windows\System32\cliconfg.exe"
 mklink "C:\Users\%USERNAME%\lang\Symlink\Home\SystemConfiguration" "C:\Windows\System32\msconfig.exe"
 mklink "C:\Users\%USERNAME%\lang\Symlink\Home\SystemInformation" "C:\Windows\System32\msinfo32.exe"
 
