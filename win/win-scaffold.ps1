@@ -28,6 +28,7 @@ $langdirs = @("AdminTemplates",
               "JSON", 
               "JScript", 
               "LINQ",
+              "Markdown",
               "MOF",
               "MSBuild",
               "MSC",
@@ -64,6 +65,7 @@ $xmllangdirs = @("AutoUnattend",
 
 foreach ($xmllangdir in $xmllangdirs)
     {New-Item -Path $xmllangdir -ItemType Directory -Force}
+
 
 
 
