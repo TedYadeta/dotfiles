@@ -1,0 +1,11 @@
+---
+- name: GCC Full Suite on Debian
+  ansible.builtin.package:
+    name:
+      - gcc
+      - g++
+      - gnat
+      - gdc
+      - gfortran
+      - gccgo
+    state: latest

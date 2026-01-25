@@ -1,0 +1,11 @@
+ ---
+ - name: GCC Full Suite on Red Hat Enterprise Linux
+   ansible.builtin.package:
+     name:
+       - gcc
+       - g++
+       - gcc-gnat
+       - gcc-gdc
+       - gcc-fortran
+       - gcc-go
+     state: latest

@@ -1,0 +1,13 @@
+---
+- name: Install GCC Compilers on Linux
+  hosts: localhost
+  connection: local
+  gather_facts: yes
+  tasks:
+  - name: Install GCC Compilers on Debian
+    include_tasks: Debian.yaml
+    when: ansible_facts['os_family']|lower == 'debian'
+
+  - name: Install GCC Compilers on RedHat
+    include_tasks: Redhat.yaml
+    when: ansible_facts['os_family']|lower == 'redhat'
