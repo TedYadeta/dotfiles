@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Vex(illologist)-x86_64.sh - A prototype script for explaining CPU Flags
+# Note - Only for x86_64 Architecture (May refactor in Perl for its regex capabilities)
+
 cat /proc/cpuinfo | grep "flags" | tr ' ' '\n' | grep -v "flags" > raw-flags.txt
 cat raw-flags.txt | sort | uniq > data-flags.txt
 
