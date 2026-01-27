@@ -17,7 +17,22 @@ alias zhistory="cat ~/.zsh_history"
 # ====================
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 alias insomnia="caffeinate -dimus"
-# add one for resetting the Dock here
+
+alias desilt="killall Dock"
+
+function drydock() {
+  echo "Warning! You're going to completely reset the Dock! Continue?
+  read -s -k "Press Enter to Continue or Ctrl-C to Cancel."
+  defaults delete com.apple.dock
+  killall Dock
+  echo "Dock has been completely reset."
+}
+
+alias aboutthismac="system_profiler SPHardwareDataType"
+
+alias lskext="kextfind"
+
+alias scrcap="screencapture"
 
 # 3. macOS Application Alias Shortcuts
 # ====================================
@@ -29,3 +44,4 @@ alias lacerate="open -a Shortcuts"
 # ===============================
 alias rb="ruby"
 alias pl="perl"
+
