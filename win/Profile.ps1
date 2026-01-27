@@ -2,6 +2,32 @@
 # Reminder that this should be used sparingly,
 # Not for scripts!
 
+# 0) Aliases for the Built-In Legacy Compilers of Windows
+# =======================================================
+
+function Compile-ASPNET {
+    Start-Process -FilePath C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet_compiler.exe
+}
+
+function Compile-CSharp {
+    Start-Process -FilePath C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe
+}
+
+function Compile-ILAssembly {
+    Start-Process -FilePath C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ilasm.exe
+}
+
+function Compile-JScript {
+    Start-Process -FilePath C:\Windows\Microsoft.NET\Framework64\v4.0.30319\jsc.exe
+}
+
+function Compile-MSBuild {
+    Start-Process -FilePath C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe
+}
+
+function Compile-VisualBasic {
+    Start-Process -FilePath C:\Windows\Microsoft.NET\Framework64\v4.0.30319\vbc.exe
+}
 
 # I) Aliases for Built-In Commands
 # ================================
@@ -300,6 +326,7 @@ Set-Alias -Name shvqc -Value Start-HVQC
 # of Windows Settings to launch as well.
 
 # For example, the Display Section in System can be launched from dpiscaling.exe
+
 
 
 
