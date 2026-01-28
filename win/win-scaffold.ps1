@@ -35,9 +35,7 @@ $langdirs = @("AdminTemplates",
               "MSIL",
               "PowerShell",
               "Python",
-              "RegEntries", 
-              "RegHives", 
-              "RegPolicies",
+              "Registry",
               "Symlink",
               "TXT",
               "VBScript",
@@ -59,12 +57,27 @@ $pwshlangdirs = @("Manifests",
 foreach ($pwshlangdir in $pwshlangdirs)
     {New-Item -Path $pwshlangdir -ItemType Directory -Force}
 
+# Then, we set to Registry-specific subfolders
+Set-Location -Path C:\Users\$env:USERNAME\lang\Registry
+
+$reglangdirs = @("Entries",
+                 "Hives",
+                 "Policies")
+
+foreach ($reglangdir in $reglangdirs)
+  {New-Item -Path $reglangdir -ItemType Directory -Force}
+
+
+
 # Then, we allow for others to follow, so in the case of XML, specific formats unique to it.
+Set-Location -Path C:\Users\$env:USERNAME\lang\XML
+
 $xmllangdirs = @("AutoUnattend",
                  "ScheduledTasks")
 
 foreach ($xmllangdir in $xmllangdirs)
     {New-Item -Path $xmllangdir -ItemType Directory -Force}
+
 
 
 
