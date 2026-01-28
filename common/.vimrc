@@ -81,7 +81,7 @@ set title
 :iabbrev ctmpl #include<stdio.h><cr>#include<stdlib.h>
 
 " C (Linux Kernel Module Programming)
-:iabbrev modtmpl #include <linux/init.h><cr>#include <linux/kernel.h><cr>#include <linux.module.h><cr>
+:iabbrev kmodtmpl #include <linux/init.h><cr>#include <linux/kernel.h><cr>#include <linux.module.h><cr>
 
 " HTML
 :iabbrev htmltmpl <!DOCTYPE HTML><cr><HEAD><cr><TITLE>*</TITLE><cr></HEAD><cr><BODY><cr></BODY></HTML>
@@ -94,6 +94,9 @@ set title
 
 " Perl
 :iabbrev perltmpl #!/usr/bin/perl<cr><cr>use strict;<cr>use warnings;<cr>
+
+" PowerShell (Admin)
+:iabbrev pwshadmtmpl #Requires -RunAsAdministrator
 
 " Python3
 :iabbrev py3tmpl #!/usr/bin/env python3
