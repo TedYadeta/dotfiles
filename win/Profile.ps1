@@ -65,6 +65,18 @@ Set-Alias -Name wrh -Value Write-Host
 Set-Alias -Name wt -Value wt
 # Note, technically this already exists by default on Windows 11 BUT this allows it to show up after running Get-Alias
 
+Set-Alias -Name wo -Value Write-Output
+
+Set-Alias -Name cph -Value Convert-Path
+
+Set-Alias -Name jph -Value Join-Path
+
+Set-Alias -Name rph -Value Resolve-Path
+
+Set-Alias -Name sph -Value Split-Path
+
+Set-Alias -Name tph -Value Test-Path
+
 
 # II) Functions and Associated Aliases for Custom Commands
 # ========================================================
@@ -326,6 +338,7 @@ Set-Alias -Name shvqc -Value Start-HVQC
 # of Windows Settings to launch as well.
 
 # For example, the Display Section in System can be launched from dpiscaling.exe
+
 
 
 
