@@ -20,8 +20,8 @@ Python 3.11.7 minimum.
 
 Tested on:
 ----------
-Debian Trixie 15
-RHEL (Rocky 9 and Fedora 42)
+- Debian Trixie 15
+- RHEL (Rocky 9 and Fedora 42)
 
 
 License
