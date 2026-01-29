@@ -23,6 +23,7 @@ PowerShell Ver. 5.1 or later.
 
 #### macOS:
 macOS Monterey or later.
+Zsh Ver. 5.8 or later.
 
 #### Linux:
 
@@ -30,6 +31,9 @@ macOS Monterey or later.
 
 ##### RHEL:
 RHEL 9 Family (Rocky 9, AlmaLinux 9, etc.) OR Fedora 40 and newer
+
+#### Debian:
+Debian 15 Trixie
 
 
 ### Minimum Language/Tool Version Requirements
@@ -55,4 +59,6 @@ With the new addition of scripts including Python, Perl and potentially a few ot
 ## Polyglotfiles
 
 A portmanteau of "Polyglot" and "Dotfiles", these specific scripts and files are meant to ensure similar functionality across several languages, and OSes, serving as useful tools that double as learning exercises, showcasing the use of languages.
-    
+
+## Update: 01/29/26
+With the expansion of my dotfiles/polyglotfiles into a massive sprawl across 4 Operating Systems, the introduction of LLM Modelfiles for OS Specialists and assistants, and to the point of writing custom applications, this has blossomed into something much larger, and I am excited for it. More to follow.
