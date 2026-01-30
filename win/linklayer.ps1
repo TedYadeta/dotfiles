@@ -42,6 +42,8 @@ $linklist = [ordered]@{
     'ControlPanel'                 = 'control.exe'
     'CredentialWizard'             = 'credwiz.exe'
 
+    'DriveOptimizer'               = 'dfrgui.exe'
+
     'EventViewer'                  = 'eventvwr.exe'
 
     'FileHistory'                  = 'FileHistory.exe'
@@ -98,4 +100,5 @@ $linklist.GetEnumerator() | ForEach-Object {
     3. Create Similar Hash Tables for Pro and Enterprise
     4. Create a Version Detector, if Home, then run HomeSymlinkSetterFunction
     4a. If Pro, then run ProSymlinkSetterFunction, which will also run the HomeSymlinkSetterFunction
+
 #>
