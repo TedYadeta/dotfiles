@@ -33,28 +33,52 @@ $symlinkentpath = Join-Path -Path $userpath -Childpath \lang\Symlink\Enterprise
 $system32path = 'C:\Windows\System32'
 
 $linklist = [ordered]@{
+    'AuthorizationManager'         = 'azman.msc'
+
     'Calculator'                   = 'calc.exe'
+    'CertManager-CurrentUser'      = 'certmgr.msc'
+    'CertManager-LocalMachine'     = 'certlm.msc'
     'CharacterMap'                 = 'charmap.exe'
     'CleanManager'                 = 'cleanmgr.exe'
     'ColorManagement'              = 'colorcpl.exe'
     'CommandPrompt'                = 'cmd.exe'
+    'ComponentServices'            = 'comexp.msc'
     'ComputerDefaultsApps'         = 'ComputerDefaults.exe'
+    'ComputerManagment'            = 'compmgmt.msc'
     'ControlPanel'                 = 'control.exe'
     'CredentialWizard'             = 'credwiz.exe'
 
+    'DeviceManager'                = 'devmgmt.msc'
+    'DevModeRunAsUserConfig'       = 'devmoderunasuserconfig.msc'
+    'DigitizerMapper'              = 'MultiDigiMon.exe'
+    'DirectXDiagnosticTool'        = 'dxdiag.exe'
+    'DisplayColorCalibration'      = 'dccw.exe'
+    'DisplayControlPanel'          = 'dpiscaling.exe'
+    'DiskManagement'               = 'diskmgmt.msc'
     'DriveOptimizer'               = 'dfrgui.exe'
 
+    'Edit'                         = 'edit.exe'
     'EventViewer'                  = 'eventvwr.exe'
 
     'FileHistory'                  = 'FileHistory.exe'
     'FileSignatureVerification'    = 'sigverif.exe'
 
+    'IExpress'                     = 'iexpress.exe'
+    'iSCSCInitiator'               = 'iscsicpl.exe'
+
+    'LiveCaptions'                 = 'LiveCaptions.exe'
+    'LocalUsersandGroups'          = 'lusrmgr.msc'
+
     'MaliciousSoftwareRemovalTool' = 'MRT.exe'
     'MemoryDiagnosticsTool'        = 'MdSched.exe'
     'MicrosoftManagementConsole'   = 'mmc.exe'
+    'MobilityCenter'               = 'mblctr.exe'
 
     'Narrator'                     = 'Narrator.exe'
+    'Notepad'                      = 'notepad.exe'
     
+    'ODBCAdministrator'            = 'odbcad32.exe'
+    'OptionalFeatures'             = 'OptionalFeatures.exe'
     'OnScreenKeyboard'             = 'osk.exe'
     
     'PerformanceMonitor'           = 'perfmon.exe'    
@@ -65,13 +89,17 @@ $linklist = [ordered]@{
     'RemoteDesktopConnection'      = 'mstsc.exe'
     'ResourceMonitor'              = 'resmon.exe'
 
+    'Services'                     = 'services.msc'
     'ShareCreationWizard'          = 'shrpubw.exe'
-    'SQLClientConfigUtility'       = 'cliconfig.exe'
+    'SharedFolders'                = 'fsmgmt.msc'
+    'SQLClientConfigUtility'       = 'cliconfg.exe'
     'SystemConfiguration'          = 'msconfig.exe'
     'SystemInformation'            = 'msinfo32.exe'
+    'SystemProperties'             = 'SystemPropertiesComputerName.exe'
 
     'TaskManager'                  = 'Taskmgr.exe'
     'TaskScheduler'                = 'taskschd.msc'
+    'TPMManagement'                = 'tpm.msc'
 
     'UserAccounts'                 = 'Netplwiz.exe'
 
@@ -79,6 +107,7 @@ $linklist = [ordered]@{
     'VolumeMixer'                  = 'SndVol.exe'
 
     'WindowsFaxAndScan'            = 'WFS.exe'
+    'WindowsFirewall'              = 'WF.msc'
     'WindowsRemoteAssistance'      = 'msra.exe'
     }
 
@@ -100,5 +129,7 @@ $linklist.GetEnumerator() | ForEach-Object {
     3. Create Similar Hash Tables for Pro and Enterprise
     4. Create a Version Detector, if Home, then run HomeSymlinkSetterFunction
     4a. If Pro, then run ProSymlinkSetterFunction, which will also run the HomeSymlinkSetterFunction
-
 #>
+
+# LocalGroupPolicyEditor - C:\Windows\System32\gpedit.msc
+# LocalSecurityPolicy - C:\Windows\System32\secpol.msc
