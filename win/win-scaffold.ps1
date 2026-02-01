@@ -36,6 +36,7 @@ $langdirs = @("AdminTemplates",
               "PowerShell",
               "Python",
               "Registry",
+              "Server",
               "Symlink",
               "TXT",
               "VBScript",
@@ -77,3 +78,4 @@ $xmllangdirs = @("AutoUnattend",
 
 foreach ($xmllangdir in $xmllangdirs)
     {New-Item -Path $xmllangdir -ItemType Directory -Force}
+
