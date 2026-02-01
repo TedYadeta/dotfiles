@@ -17,6 +17,8 @@ a e 'emacs'
 a ee 'emacs $HOME/.emacs'
 a enw 'emacs -nw'
 
+alias fbsd-ver freebsd version
+
 # Need to order this up for later when I have time:
 
 # O. Aliases for Editing .*rc files
@@ -86,3 +88,13 @@ a ans-inv 'ansible-inventory'
 a ans-pbk 'ansible-playbook'
 a ans-pul 'ansible-pull'
 a ans-vlt 'ansible-vault'
+
+# III) ZFS Aliases
+# ================
+
+alias zpver  zpool version
+alias zpls   zpool list
+alias zpstat zpool status
+alias zpio   zpool iostat
+alias zpevts zpool events
+alias zphist zpool history
