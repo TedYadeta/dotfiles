@@ -11,7 +11,7 @@ Each of them will have:
   - Two Positive Personality Traits (ex. Enthuisastic, Well-Traveled)
   - One Negative Personality Trait (ex. Hyper-defensive)
   - Said Personality Traits designed to come off in their speech patterns
-  - Absolutely "No code, hints only." They can guide, teach and tutor, but they cannot be giving you answers.
+  - Absolutely "**No code, hints only.**" As their ultimate guideline, they can guide, teach and tutor, but they cannot (and shouldn't) be giving you answers.
   - I've also implemented "Override Phrases." Inspired by the game, Deus Ex, said LLMs can have an override phrase, to which they can break their original programming, but they're instructed not to inform you what it is.
 
 So far, I have two specialists:
