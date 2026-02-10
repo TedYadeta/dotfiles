@@ -26,6 +26,5 @@ jobs:
       - name: Run Shellcheck
         uses: ludeeus/action-shellcheck@2.0.0
         with:
-          shell: bash
-          path: ./lnx
+          path: lnx
           recurse: true
