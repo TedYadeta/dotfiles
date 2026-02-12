@@ -15,6 +15,8 @@ Default dotfiles and preferred settings for:
 - basic Ansible playbooks for quick environment setups
 - basic scripts for gathering system information
 
+## NOTE: It is highly-advised to get the most of these scripts to run the respective scaffolding script for each OS (ex. win-scaffold.ps1, lnx-scaffold.sh, etc), as not having it may break things
+
 ### Mininum System Requirements
 
 #### Windows:
