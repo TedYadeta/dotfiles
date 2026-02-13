@@ -81,4 +81,4 @@ $xmllangdirs = @("AutoUnattend",
 foreach ($xmllangdir in $xmllangdirs)
     {New-Item -Path $xmllangdir -ItemType Directory -Force}
 
-
+Write-Host -ForegroundColor Green "Windows Folder Structure deployed. Happy programming/scripting!"
