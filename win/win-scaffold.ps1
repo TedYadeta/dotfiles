@@ -35,6 +35,7 @@ $langdirs = @("AdminTemplates",
               "MSIL",
               "PowerShell",
               "Python",
+              "RDP",
               "Registry",
               "Server",
               "Symlink",
@@ -53,7 +54,8 @@ Set-Location -Path C:\Users\$env:USERNAME\lang\PowerShell
 
 $pwshlangdirs = @("Manifests",
                  "Modules",
-                 "Scripts")
+                 "Scripts",
+                 "SessionConfig")
 
 foreach ($pwshlangdir in $pwshlangdirs)
     {New-Item -Path $pwshlangdir -ItemType Directory -Force}
@@ -78,4 +80,5 @@ $xmllangdirs = @("AutoUnattend",
 
 foreach ($xmllangdir in $xmllangdirs)
     {New-Item -Path $xmllangdir -ItemType Directory -Force}
+
 
