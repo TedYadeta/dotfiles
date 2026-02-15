@@ -10,7 +10,7 @@ then
 else
     echo "Warning! Firefox is not found on this system!"
     echo "Please install Firefox to continue. Aborting process."
-    exit $1
+    exit "$1"
 fi
 
 archURL="https://www.archlinux.org"
@@ -21,7 +21,7 @@ suseURL="https://news.opensuse.org"
 
 declare -a lnxurls
 
-lnxurls=($archURL $debURL $fedURL $genURL $suseURL)
+lnxurls=( "about:welcome" "$archURL" "$debURL" "$fedURL" "$genURL" "$suseURL" )
 
 
 firefox --new-window
