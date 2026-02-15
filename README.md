@@ -20,8 +20,10 @@ Default dotfiles and preferred settings for:
 ### Mininum System Requirements
 
 #### Windows:
-Windows 11 or later.
+Windows 11 Home, Pro or Enterprise or later.
+Windows Server 2025 or later.
 PowerShell Ver. 5.1 or later.
+
 
 #### macOS:
 macOS Monterey or later.
