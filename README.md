@@ -37,7 +37,7 @@ Zsh Ver. 5.8 or later.
 RHEL 9 Family (Rocky 9, AlmaLinux 9, etc.) OR Fedora 40 and newer
 
 ##### Debian:
-Debian 15 Trixie
+Debian 13 Trixie
 
 #### BSD:
 FreeBSD 15.0 or later
