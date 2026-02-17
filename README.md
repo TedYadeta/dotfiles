@@ -24,13 +24,12 @@ Windows 11 Home, Pro or Enterprise or later.
 Windows Server 2025 or later.
 PowerShell Ver. 5.1 or later.
 
-
 #### macOS:
 macOS Monterey or later.
 Zsh Ver. 5.8 or later.
 
 #### Linux:
-
+Bash 5.3.31 or later
 ##### Requires Kernel 6.15 and newer installed on the system
 
 ##### RHEL:
@@ -43,10 +42,13 @@ Debian 13 Trixie
 FreeBSD 15.0 or later
 tcsh Ver. 6.24.14
 
+#### Solaris:
+OpenIndiana Hipster 2025.10 or later
+ksh/sh Ver. 93u+
+
 ### Minimum Language/Tool Version Requirements
 
 - Ansible Core 2.14.18 or later
-- Bash 5.3.31 or later
 - Perl 5.40.3 or later
 - Python 3.13.6 or later
 - Ruby 3.3.8 or later
