@@ -17,7 +17,7 @@ $langdirs = @("AdminTemplates",
               "DAT",
               "DDF",
               "DLL",
-              "EVT",
+              "Events",
               "EXE",
               "Firewall", 
               "FSharp",
@@ -28,6 +28,7 @@ $langdirs = @("AdminTemplates",
               "JSON", 
               "JScript", 
               "LINQ",
+              "LOG",
               "Markdown",
               "MOF",
               "MSBuild",
@@ -44,10 +45,21 @@ $langdirs = @("AdminTemplates",
               "VisualBasic",
               "WPF",
               "WQL",
+              "WSL",
               "XML")
 
 foreach ($langdir in $langdirs)
     {New-Item -Path $langdir -ItemType Directory -Force}
+
+# Once, the initial folder hierarchy is in place, we move into subfolders, starting with Events and associated File Formats
+Set-Location -Path C:\Users\$env:USERNAME\lang\Events
+
+$evtslangdirs = @("EVT",
+                  "ETL",
+                  "EVTX")
+
+foreach ($evtdir in $evtslangdirs)
+  {New-Item -Path $evtdir -ItemType Directory -Force}
 
 # Next, we provide some cutlery and organize how PowerShell saves its proper file formats
 Set-Location -Path C:\Users\$env:USERNAME\lang\PowerShell 
@@ -71,14 +83,15 @@ foreach ($reglangdir in $reglangdirs)
   {New-Item -Path $reglangdir -ItemType Directory -Force}
 
 
-
-# Then, we allow for others to follow, so in the case of XML, specific formats unique to it.
+# Following that, we allow for others to follow, so in the case of XML, specific formats unique to it.
 Set-Location -Path C:\Users\$env:USERNAME\lang\XML
 
-$xmllangdirs = @("AutoUnattend",
+$xmllangdirs = @("AssistanceMarkupLanguage",
+                 "AutoUnattend",
                  "ScheduledTasks")
 
 foreach ($xmllangdir in $xmllangdirs)
     {New-Item -Path $xmllangdir -ItemType Directory -Force}
 
 Write-Host -ForegroundColor Green "Windows Folder Structure deployed. Happy programming/scripting!"
+
