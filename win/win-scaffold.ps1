@@ -64,10 +64,11 @@ foreach ($evtdir in $evtslangdirs)
 # Next, we provide some cutlery and organize how PowerShell saves its proper file formats
 Set-Location -Path C:\Users\$env:USERNAME\lang\PowerShell 
 
-$pwshlangdirs = @("Manifests",
-                 "Modules",
-                 "Scripts",
-                 "SessionConfig")
+$pwshlangdirs = @("Datafiles",
+                  "Manifests",
+                  "Modules",
+                  "Scripts",
+                  "SessionConfig")
 
 foreach ($pwshlangdir in $pwshlangdirs)
     {New-Item -Path $pwshlangdir -ItemType Directory -Force}
@@ -88,10 +89,13 @@ Set-Location -Path C:\Users\$env:USERNAME\lang\XML
 
 $xmllangdirs = @("AssistanceMarkupLanguage",
                  "AutoUnattend",
-                 "ScheduledTasks")
+                 "ScheduledTasks",
+                 "XPath",
+                 "XSLT")
 
 foreach ($xmllangdir in $xmllangdirs)
     {New-Item -Path $xmllangdir -ItemType Directory -Force}
 
 Write-Host -ForegroundColor Green "Windows Folder Structure deployed. Happy programming/scripting!"
+
 
