@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --new-window "azure.microsoft.com" "azure.status.microsoft/en-us/status" "learn.microsoft.com/en-us/intune" "learn.microsoft.com/en-us/graph" "learn.microsoft.com/en-us/entra/identity" "msportals.io"
