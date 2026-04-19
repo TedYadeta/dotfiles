@@ -2,7 +2,6 @@
 https://graph.microsoft.com/v1.0/me/?$select=displayName,mail
 
 # Get Display Name, Principal Name, and ID
-
 https://graph.microsoft.com/v1.0/me?$select=displayName,userPrincipalName,id
 
 # Get Manager's Display Name, Principal Name, and ID
