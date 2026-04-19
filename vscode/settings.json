@@ -1,0 +1,33 @@
+{
+    // I. Breadcrumb Settings
+    "breadcrumbs.enabled": true,
+
+    // II. Editor Settings
+    "editor.aiStats.enabled": false,
+    "editor.autoClosingBrackets": "languageDefined",
+    "editor.fontFamily": "Cascadia Code, monospace",
+    "editor.autoIndent": "keep",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorStyle": "block",
+    "editor.fontLigatures": true,
+    "editor.indentSize": "tabSize",
+    "editor.lineNumbers": "on",
+    "editor.wordWrap": "on",
+
+    // III. Files Settings
+    "files.associations": {"*.extension": "language"},
+    "files.autoSave": "off",
+    "files.eol": "\n",
+
+
+    // Workbench Settings
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.enableExperiments": false,
+    "workbench.preferredDarkColorTheme": "Default Dark Modern",
+
+    // Telemetry Settings
+    "telemetry.telemetryLevel": "off",
+
+}
+

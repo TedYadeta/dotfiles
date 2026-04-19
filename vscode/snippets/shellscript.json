@@ -1,0 +1,11 @@
+{
+    "Bash Template": {
+        "prefix": "bashtmpl",
+        "body": [
+            "#!/usr/bin/env bash",
+            "",
+            "$0"
+        ],
+        "description": "Standard Bash shebang"
+    }
+}

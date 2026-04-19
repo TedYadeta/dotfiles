@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ms-vscode.powershell",
+        "ms-azuretools.vscode-bicep",
+        "alexkrechik.cucumberautocomplete"
+    ]
+ }
