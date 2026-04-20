@@ -11,6 +11,7 @@ Default dotfiles and preferred settings for:
 - PowerShell
 - tmux
 - vim
+- vscodium
 - simple scaffolding scripts for available OSes for quick environment setups
 - basic Ansible playbooks for quick environment setups
 - basic scripts for gathering system information
@@ -53,6 +54,7 @@ ksh/sh Ver. 93u+
 - Python 3.13.6 or later
 - Ruby 3.3.8 or later
 - Vim version 9.1 or later
+- VSCodium version 1.112.01907 or later
 - Firefox v.147.0.1 or later
 
 ## Update: 08/09/25
