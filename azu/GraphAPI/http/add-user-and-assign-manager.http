@@ -1,0 +1,28 @@
+# 1. Create User
+
+POST  https://graph.microsoft.com/v1.0/users
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "accountEnabled": true,
+    "displayName": "{{ FULLNAME }}",
+    "mailNickname": "{{ EMAIL_ADDRESS }}",
+    "userPrincipalName": "{{ FULLNAME }}@{{TENANT}}.onmicrosoft.com",
+    "passwordProfile" : {
+        "forceChangePasswordNextSignIn": false,
+        "password": "{{ PASSWORD }}"
+        }
+}
+
+###
+
+# 2. Assign their Manager
+
+PUT https://graph.microsoft.com/v1.0/users/{{USERID}}/manager/$ref 
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "@odata.id": "https://graph.microsoft.com/v1.0/users/{{MANAGERID}}"
+}
