@@ -1,0 +1,20 @@
+[wsl2]
+# autoProxy
+debugConsole=False
+# defaultVhdSize
+dnsProxy=False
+# dnsTunneling
+firewall=True
+guiApplications=False
+# localhostForwarding
+# kernel
+# kernelCommandLine
+# kernelModules
+memory=4GB
+nestedVirtualization=False
+# networkingMode
+processors=2
+safeMode=False
+swap=8GB
+# swapFile
+vmIdleTimeout=300000
