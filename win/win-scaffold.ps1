@@ -35,7 +35,6 @@ $langdirs = @("AdminTemplates",
               "MSC",
               "MSIL",
               "PowerShell",
-              "Python",
               "RDP",
               "Registry",
               "Server",
@@ -67,8 +66,9 @@ Set-Location -Path C:\Users\$env:USERNAME\lang\PowerShell
 $pwshlangdirs = @("Datafiles",
                   "Manifests",
                   "Modules",
+                  "RoleCapabilities"
                   "Scripts",
-                  "SessionConfig")
+                  "SessionConfigurations")
 
 foreach ($pwshlangdir in $pwshlangdirs)
     {New-Item -Path $pwshlangdir -ItemType Directory -Force}
