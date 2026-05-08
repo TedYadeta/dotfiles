@@ -34,6 +34,7 @@ $langdirs = @("AdminTemplates",
               "MSBuild",
               "MSC",
               "MSIL",
+              "Netsh",
               "PowerShell",
               "RDP",
               "Registry",
@@ -60,10 +61,19 @@ $evtslangdirs = @("EVT",
 foreach ($evtdir in $evtslangdirs)
   {New-Item -Path $evtdir -ItemType Directory -Force}
 
+Set-Location -Path C:\Users\$env:USERNAME\lang\Netsh
+
+$netlangdirs = @("Dumps",
+                 "Scripts")
+
+foreach ($netlangdir in $netlangdirs)
+  {New-Item -Path $netlangdir -ItemType Directory -Force}
+
 # Next, we provide some cutlery and organize how PowerShell saves its proper file formats
 Set-Location -Path C:\Users\$env:USERNAME\lang\PowerShell 
 
 $pwshlangdirs = @("Datafiles",
+                  "DSC",
                   "Manifests",
                   "Modules",
                   "RoleCapabilities"
