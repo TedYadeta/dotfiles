@@ -1,0 +1,5 @@
+list disk
+select disk 0
+list part
+list volume
+list vdisk
