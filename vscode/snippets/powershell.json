@@ -1,0 +1,11 @@
+{
+    "PowerShell Template": {
+        "prefix": "pwshtmpl",
+        "body": [
+            "Set-StrictMode -Version Latest",
+            "",
+            "$0"
+        ],
+        "description": "PowerShell Strict Mode enforcement"
+    }
+}
