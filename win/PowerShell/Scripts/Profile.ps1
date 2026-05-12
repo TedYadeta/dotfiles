@@ -2,6 +2,8 @@
 # Reminder that this should be used sparingly,
 # Not for scripts!
 
+Set-PSReadLineOption -HistorySaveStyle SaveNothing
+
 # I) Aliases for Built-In Commands
 # ================================
 
