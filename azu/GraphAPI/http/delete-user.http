@@ -1,0 +1,5 @@
+# 1. Delete User
+
+DELETE  https://graph.microsoft.com/v1.0/users/{{USERID}}
+Content-Type: application/json
+Authorization: Bearer {{token}}

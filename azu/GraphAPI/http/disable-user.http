@@ -1,0 +1,7 @@
+UPDATE  https://graph.microsoft.com/v1.0/users/{id}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "accountEnabled": false
+}
