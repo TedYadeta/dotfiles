@@ -1,0 +1,20 @@
+@{
+
+LanguageMode = 'NoLanguage'
+
+ExecutionPolicy = 'Restricted'
+
+SchemaVersion = '2.0.0.0'
+
+Description = 'Helpdesk.pssc is for Help Desk agents to diagnose issues.'
+
+SessionType = 'RestrictedRemoteServer'
+
+TranscriptDirectory = 'C:\Your\Path\Here'
+
+RunAsVirtualAccount = $true
+
+RoleDefinitions = @{
+    'DOMAIN\HelpdeskGroup' = @{RoleCapabilities = "Helpdesk"}
+    }
+}
