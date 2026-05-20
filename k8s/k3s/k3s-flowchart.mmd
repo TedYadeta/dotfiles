@@ -1,0 +1,25 @@
+ flowchart
+
+    A[ServiceLB] --> B[Traefik]
+
+    B --> C{API Server}
+
+    C --> D[Local Path Provisioner]
+
+    C --> E[Helm Controller]
+
+    C --> F[Metrics Server]
+
+    C --> G[Kine]
+
+    G --> H[Sqlite]
+
+    I[CoreDNS] --> C
+
+    J[Flannel] --> C
+
+    J --> K[Kube-Router]
+
+    K --> L[Containerd]
+
+    L --> M[Spegel] 
