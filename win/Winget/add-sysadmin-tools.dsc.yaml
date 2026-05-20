@@ -1,0 +1,30 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  configurationVersion: "0.2"
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Microsoft PowerShell 7.1
+        securityContext: elevated
+      settings:
+        id: Microsoft.PowerShell
+        source: WinGet
+        ensure: Present
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Microsoft PowerToys
+        securityContext: elevated
+      settings:
+        id: Microsoft.PowerToys
+        source: WinGet
+        ensure: Present
+      
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install the entire Microsoft SysInternals Suite 
+        securityContext: elevated
+      settings:
+        id: Microsoft.SysInternals.Suite
+        source: WinGet
+        ensure: Present
