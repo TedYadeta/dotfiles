@@ -50,11 +50,11 @@ tcsh Ver. 6.24.14
 OpenIndiana Hipster 2025.10 or later
 ksh/sh Ver. 93u+
 
-### Kubernetes:
+#### Kubernetes:
 k3s v.1.36.1 or later
 Helm v4.1.1 or later
 
-### Hashicorp
+#### Hashicorp
 Terraform v.1.15.4 or later
 
 ### Minimum Language/Tool Version Requirements
