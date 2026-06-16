@@ -1,0 +1,25 @@
+alias exec shw-sup-cfg show startup-config
+alias exec shw-rng-cfg show running-config
+
+alias exec shw-ver show version
+alias exec shw-inv show inventory
+alias exec shw-lic show license
+alias exec src-ihn show running-config | include hostname
+
+alias exec shw-int-sts show interfaces status
+alias exec shw-int-des show interfaces description
+alias exec shw-cdp-nei-det show cdp neighbors detail
+alias exec shw-ldp-nei-det show lldp neighbors detail
+
+alias exec shw-vla-bri show vlan brief
+alias exec shw-int-tru show interfaces trunk
+alias exec shw-mac-add-tab show mac address-table
+
+alias exec shw-ip-int-bri show ip interface brief
+alias exec shw-arp show arp
+alias exec shw-def-gat show default-gateway
+
+alias exec shw-log show logging
+alias exec shw-env-all show environment all
+alias exec shw-pro-cpu show processes cpu
+alias exec shw-mem-sta show memory statistics
