@@ -1,0 +1,29 @@
+body common control
+{
+    inputs => { "$(sys.libdir)/stdlib.cf" };
+}
+
+bundle agent editors
+{
+packages:
+    freebsd::
+        "emacs"
+            policy => "present",
+            version => "latest",
+            package_module => pkg;
+
+        "nano"
+            policy => "present",
+            version => "latest",
+            package_module => pkg;
+
+        "vim"
+            policy => "present",
+            version => "latest",
+            package_module => pkg;
+}
+bundle agent __main__
+{
+        methods:
+                "editors";
+}
