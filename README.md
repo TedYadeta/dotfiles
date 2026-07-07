@@ -42,6 +42,9 @@ Debian 13 Trixie
 ##### Azure Linux:
 Azure Linux 3.0 and newer
 
+##### NixOS:
+NixOS 26.05 or later
+
 #### BSD:
 FreeBSD 15.0 or later
 tcsh Ver. 6.24.14
