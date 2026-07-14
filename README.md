@@ -21,12 +21,12 @@ Default dotfiles and preferred settings for:
 ### Mininum System Requirements
 
 #### Windows:
-Windows 11 Home, Pro or Enterprise or later.
-Windows Server 2025 or later.
+Windows 11 Home, Pro or Enterprise or later.\
+Windows Server 2025 or later.\
 PowerShell Ver. 5.1 or later.
 
 #### macOS:
-macOS Monterey or later.
+macOS Monterey or later.\
 Zsh Ver. 5.8 or later.
 
 #### Linux:
@@ -47,15 +47,15 @@ NixOS 26.05 or later\
 Nix 2.34.7 or later
 
 #### BSD:
-FreeBSD 15.0 or later
+FreeBSD 15.0 or later\
 tcsh Ver. 6.24.14
 
 #### Solaris:
-OpenIndiana Hipster 2025.10 or later
+OpenIndiana Hipster 2025.10 or later\
 ksh/sh Ver. 93u+
 
 #### Kubernetes:
-k3s v.1.36.1 or later
+k3s v.1.36.1 or later\
 Helm v4.1.1 or later
 
 #### Hashicorp
