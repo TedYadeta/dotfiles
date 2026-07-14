@@ -44,6 +44,7 @@ Azure Linux 3.0 and newer
 
 ##### NixOS:
 NixOS 26.05 or later
+
 Nix 2.34.7 or later
 
 #### BSD:
