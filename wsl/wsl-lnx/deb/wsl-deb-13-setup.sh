@@ -5,7 +5,7 @@
 # Windows Subsystem for Linux up-and-running, especially
 # for when you need a quick build-up and tear-down!
 
-if [ note rout]
+# Add root check here
 
 apt update -y
 apt upgrade -y
