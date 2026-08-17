@@ -1,0 +1,10 @@
+Section: development
+Priority: optional
+Standards-Version: 4.5.1
+
+Package: gcc-full-suite-14
+Version: 1.0.2
+Maintainer: Local Admin <root@localhost>
+Depends: gcc-14, g++-14, gnat-14, gdc-14, gfortran-14, gccgo-14, gm2-14, gobjc-14
+Architecture: all
+Description: This metapackage installs the entire suite of compilers for the GNU Compiler Collection version 14
