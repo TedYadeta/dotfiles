@@ -46,6 +46,9 @@ Azure Linux 3.0 and newer
 NixOS 26.05 or later\
 Nix 2.34.7 or later
 
+##### Arch Linux:
+2026.05 or later
+
 #### BSD:
 FreeBSD 15.0 or later\
 tcsh Ver. 6.24.14
