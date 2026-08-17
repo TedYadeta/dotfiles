@@ -1,0 +1,15 @@
+pkgname=gcc-full-suite-16
+pkgver=1
+pkgrel=1
+pkgdesc="This metapackage installs the entire GNU Compiler Collection Version 16"
+arch=('any')
+url="https://gcc.gnu.org"
+license=('GPL-3.0-or-later')
+depends=("gcc"
+         "gcc-ada"
+         "gcc-d"
+         "gcc-fortran"
+         "gcc-gcobol"
+         "gcc-go"
+         "gcc-m2"
+         "gcc-objc")
