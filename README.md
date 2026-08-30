@@ -64,6 +64,12 @@ Helm v4.1.1 or later
 #### Hashicorp
 Terraform v.1.15.4 or later
 
+#### LXC
+Ubuntu 26.04 or later\
+snap 2.76.3 or later\
+lxc 5.21.7 or later\
+lxd 5.21.7 or later
+
 ### Minimum Language/Tool Version Requirements
 
 - Ansible Core 2.14.18 or later
