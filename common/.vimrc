@@ -75,7 +75,7 @@ set title
 :iabbrev awktmpl #!/usr/bin/awk
 
 " BaSH
-:iabbrev bashtmpl #!/bin/bash
+:iabbrev bashtmpl #!/usr/bin/env bash
 
 " C
 :iabbrev ctmpl #include<stdio.h><cr>#include<stdlib.h>
