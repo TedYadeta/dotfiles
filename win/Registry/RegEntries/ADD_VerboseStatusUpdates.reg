@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+; This wil change how Windows Updates displays its messages, being explicit instead of vague
+; Originally found on the webpage from The Register, with full URL as follows:
+; https://www.theregister.com/software/2025/09/21/make-windows-11-less-annoying-with-these-registry-tweaks/502704
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"verbosestatus"=dword:00000001
