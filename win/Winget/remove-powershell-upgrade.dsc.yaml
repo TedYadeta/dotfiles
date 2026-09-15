@@ -1,0 +1,21 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+properties:
+  configurationVersion: "0.2"
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install Microsoft PowerShell 7.1
+        securityContext: elevated
+      settings:
+        id: Microsoft.PowerShell
+        source: WinGet
+        ensure: Absent
+
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Install PowerShell DSCv3
+        securityContext: elevated
+      settings:
+        id: Microsoft.DSC
+        source: WinGet
+        ensure: Absent
