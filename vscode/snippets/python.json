@@ -1,0 +1,11 @@
+{
+  "Python Template": {
+    "prefix": "pytmpl",
+    "body":
+      "#!/usr/bin/env python3",
+      "",
+      "$0"
+    ],
+    "description": "Standard Python shebang"
+  }
+}
